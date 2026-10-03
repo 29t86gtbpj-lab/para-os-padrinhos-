@@ -162,10 +162,10 @@ body{
 const paginas = [
 "IMG_5017.png",
 "IMG_5216.png",
+"IMG_5287.png",
 "IMG_5236.png",
 "IMG_5237.png",
-"IMG_4261.png",
-"IMG_5287.png"
+"IMG_4261.png"
 ];
 
 
@@ -235,11 +235,11 @@ document.addEventListener("touchend",(e)=>{
 // botões "Abrir localização" que fazem parte da imagem: áreas clicáveis invisíveis
 // posições em fração da imagem (x1, x2 = esquerda/direita; y1, y2 = topo/base)
 const botoesLocalizacao = {
-    3: {
+    4: {
         url: "https://maps.app.goo.gl/267LG3owEGgr6xJq9?g_st=ic",
         x1: 0.33, x2: 0.70, y1: 0.87, y2: 0.94
     },
-    4: {
+    5: {
         url: "https://maps.app.goo.gl/K3RfUVqnDqG6cGDU7?g_st=ic",
         x1: 0.33, x2: 0.67, y1: 0.745, y2: 0.805
     }
@@ -274,7 +274,7 @@ function cliqueNoBotaoLocalizacao(e){
 
 document.addEventListener("click",(e)=>{
 
-    // botão "Abrir localização" nas páginas 3 e 4
+    // botão "Abrir localização" nas páginas 4 e 5
     if(cliqueNoBotaoLocalizacao(e)) return;
 
     // páginas com link (presentes / confirmar presença): clique abre o link
